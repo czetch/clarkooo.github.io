@@ -1,4 +1,5 @@
 ---
+layout: layout.njk
 tags: post
 pageTitle: Website Setup
 secondDeck: Setting up an Eleventy website using Github Pages
