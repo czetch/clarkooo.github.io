@@ -1,19 +1,8 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OOO</title>
-    </head>
-    <body>
-        <h1>OOO</h1>
-        <h3>On the Origin and Observations of Clark Zhang<h3>
-
-
-    <h2><a href="/posts/eleventy-website-setup/">Setting up an Eleventy website using Github Pages</a></h2>
-    <em>2020-04-01</em>
-
-
-
-    </body>
-</html>
+---
+layout: layout.njk
+pageTitle: OOO
+---
+{% for post in collections.posts %}
+    <h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+    <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+{% endfor %}
