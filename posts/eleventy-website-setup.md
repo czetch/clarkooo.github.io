@@ -1,4 +1,5 @@
 ---
+tags: post
 pageTitle: Website Setup
 secondDeck: Setting up an Eleventy website using Github Pages
 date: 2020-04-01
